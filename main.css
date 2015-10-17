@@ -1,12 +1,86 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+input[type="submit"]{
+    color: white;
+    padding: 5px;
+    width: 68px;
+    height: 28px;
+    border-radius: 5px;
+    border: 1px;
+    font-weight: bold;
+    border: 1px groove #7a7a7a;
+    background: linear-gradient(top, #0f97ff 0%, #97d2ff 8%, #0076d1 62%, #0076d1 63%, #005494 100%);
+    background: -webkit-linear-gradient(top, #0f97ff 0%, #97d2ff 8%, #0076d1 62%, #0076d1 63%, #005494 100%);
+}
+
+input[type="submit"]:hover{
+    border: 2px groove #7a7a7a;
+}
+
+input[type="submit"].partial-fade{
+    border-top: 1px solid #cff !important;
+    border-right: 1px solid #ccf !important;
+    border-top: 1px solid #ccf !important;
+    border-top: 1px solid #6cf !important;
+    box-shadow: 0 0 8px 0 #0f97ff, inset 0 0 20px rgba(37, 141, 220, 1);
+    -webkit-box-shadow: 0 0 8px 0 #0f97ff, inset 0 0 20px rgba(37, 141, 220, 1);
+}
+
 p.text{
     float: left;
     width: 60%;
 }
 div.img-wrap{
     float: right;
-    width: 40%;
+    margin: 0px;
+    width: 38%;
 }
 img.responsive{
     max-width: 100%;
     height: auto;
+    padding: 4%;
+    background-color: #cccccc;
+}
+@media screen and (max-width: 800px){
+    .small-menu{
+        display: inline;
+    }
+    .large-menu{
+        display: none;
+    }
+}
+@media screen and (min-width: 801px) and (max-width: 1024px){
+    .small-menu{
+        display: none;
+    }
+    .large-menu{
+        display: inline;
+        width: 100%;
+    }
+    .large-menu ul{
+        list-style-type: none;
+    }
+    .large-menu ul li{
+        display: inline;
+    }
+    .content{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1025px){
+    .small-menu{
+        display: none;
+    }
+    .large-menu{
+        display: inline;
+        float: left;
+        width: 20%;
+    }
+    .content{
+        float: right;
+        width: 80%;
+    }
 }

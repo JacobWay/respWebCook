@@ -5,9 +5,31 @@
   </head>
 
   <body>
-    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a ex consectetur, tincidunt ex eget, efficitur justo. Sed et nibh lectus. Proin libero ex, volutpat ut odio sit amet, auctor luctus nibh. Sed et tincidunt ipsum, vitae rhoncus purus. Curabitur aliquet augue sit amet congue elementum. Praesent commodo vehicula condimentum. Integer egestas odio at ante eleifend molestie. Duis eget felis ac lorem euismod rhoncus. Nunc a lobortis lacus, eget tincidunt sapien. Maecenas vitae condimentum tellus, vitae ullamcorper sem. Morbi congue turpis ornare leo mollis, non pretium nibh ultricies. Aliquam nec tempus nulla.</p>
-    <div class="img-wrap">
-      <img alt="banner image" class="responsive" src="img/img1.jpg">
+    <div class="small-menu">
+      <form>
+        <select name="URL" onchange="window.location.href=this.form.URL.options[this.form.URL.selectedIndex].value">
+          <option value="blog.html">My Blog</option>
+          <option value="home.html">My Home</option>
+          <option value="tutorials.html">My Tutorials</option>
+        </select>
+      </form>
+    </div>
+
+    <div class="large-menu">
+      <ul>
+        <li>
+          <a href="blog.html">My Blog</a>
+        </li>
+        <li>
+          <a href="home.html">My Home</a>
+        </li>
+        <li>
+          <a href="tutorials.html">My Tutorials</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a ex consectetur, tincidunt ex eget, efficitur justo. Sed et nibh lectus. Proin libero ex, volutpat ut odio sit amet, auctor luctus nibh. Sed et tincidunt ipsum, vitae rhoncus purus. Curabitur aliquet augue sit amet congue elementum. Praesent commodo vehicula condimentum. Integer egestas odio at ante eleifend molestie. Duis eget felis ac lorem euismod rhoncus. Nunc a lobortis lacus, eget tincidunt sapien. Maecenas vitae condimentum tellus, vitae ullamcorper sem. Morbi congue turpis ornare leo mollis, non pretium nibh ultricies. Aliquam nec tempus nulla.</p>
     </div>
   </body>

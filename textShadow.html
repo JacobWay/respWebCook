@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+  </head>
+
+  <body>
+    <canvas id="thecanvas"></canvas>
+
+    <script type="text/javascript">
+      function drawCanvas(){
+        var canvas = document.getElementById("thecanvas");
+        var context = canvas.getContext("2d");
+        context.rotate(Math.PI/4, 0, 0);
+        context.width = 250;
+        context.height = 250;
+        context.shadowOffsetX = -1;
+        context.shadowOffsetY = -1;
+        context.shadowBlur = 2;
+        context.shadowColor = "#888888";
+        context.textAlign = "left";
+        context.font = "33px Times New Roman";
+        context.fillStyle = "#666";
+        context.fillText("This is the Canvas", 140, 1);
+        context.strokeStyle = "#555";
+        context.strokeText("This is the canvas", 140, 1);
+        context.linewidth = 2;
+      }
+    
+      drawCanvas();
+    </script>
+  </body>
+</html>
